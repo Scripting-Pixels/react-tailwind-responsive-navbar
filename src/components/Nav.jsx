@@ -19,7 +19,11 @@ function Nav({ isOpen, toggleMenu }) {
       <ul className="flex flex-col md:flex-row gap-6 w-full md:w-auto">
         {navItems.map((item) => (
           <li key={item.id}>
-            <Link onClick={toggleMenu} to={item.slug} className="hover:text-blue-500">
+            <Link 
+              onClick={toggleMenu} 
+              to={item.slug} 
+              className="hover:text-blue-500"
+            >
               {item.text}
             </Link>
           </li>
